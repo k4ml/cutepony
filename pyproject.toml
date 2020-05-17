@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cutepony"
+version = "0.1.0"
+description = "Dummy project to test poetry scripts"
+authors = ["kamal <kamal@xoxzo.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.0.6"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+cutepony = "cutepony.cli.cutepony:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
